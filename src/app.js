@@ -17,6 +17,7 @@ const url = "mongodb://127.0.0.1:27017/";
 const client = new MongoClient(url);
 const database = "DuelMasters";
 
+
 app.get('/testCard', async (req, res) => {
     let result = await client.connect();
     let db = result.db(database);
